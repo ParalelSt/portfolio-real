@@ -1,1 +1,134 @@
 @import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-background: #0B0B10;
+  --color-surface: rgb(17, 17, 24);
+  --color-border: rgb(30, 30, 42);
+
+  --color-text-primary: rgb(255, 255, 255);
+  --color-text-secondary: rgb(161, 161, 170);
+  --color-text-muted: rgb(113, 113, 122);
+
+  --color-accent: rgb(139, 92, 246);
+  --color-accent-hover: rgb(124, 58, 237);
+
+  /* Fonts */
+  --font-primary: Inter, system-ui, sans-serif;
+  --font-accent: "Space Grotesk", system-ui, sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;  
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5rem;
+  --text-xl: 3.5rem;
+  --text-2xl: 5rem;
+
+  --leading-xs: 1rem;
+  --leading-sm: 1.25rem;
+  --leading-base: 1.5rem;
+  --leading-md: 1.75rem;
+  --leading-lg: 2rem;
+  --leading-xl: 4rem;
+  --leading-2xl: 5.5rem;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  /* Shadows */
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-glow: 0 0 40px rgba(139, 92, 246, 0.25);
+
+  /* Element spacing */
+
+  --spacing-section: 6rem;
+}
+
+@layer base {
+  html, body {
+    @apply font-primary bg-background text-text-primary;
+    @apply scroll-smooth;
+    @apply antialiased;
+  }
+
+  h1, h2, h3 {
+    @apply font-accent;
+  }
+
+  h1 {
+    @apply text-2xl leading-2xl font-bold;
+  }
+
+  h2 {
+    @apply text-xl leading-xl font-semibold;
+  }
+
+  h3 {
+    @apply text-lg leading-lg font-thin;
+  }
+}
+
+@layer components {
+  .nav-link {
+    position: relative; 
+  }
+
+  .nav-link::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: -4px;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background: var(--color-accent);
+  }
+
+    .bg-hero-gradient {
+    background: 
+      radial-gradient(
+        circle at top,
+        rgba(139, 92, 246, 0.12),
+        transparent 60%
+      ),
+      rgb(11, 11, 16);
+  }
+
+  .btn-primary, .btn-secondary {
+    padding: 0.5rem 0.75rem;
+
+    border-radius: 0.5rem;
+
+    font-size: var(--text-md);
+    line-height: var(--leading-md);
+
+    transition: scale 150ms ease, border 100ms ease;
+  }
+
+  .btn-primary:hover, .btn-secondary:hover {
+    scale: 1.05;
+
+    border-color: white;
+  } 
+
+  .btn-primary {
+    border: 2px solid transparent;
+
+    color: var(--color-text-primary);
+    background-color: var(--color-accent);
+  }
+
+   .btn-secondary {
+    border: 2px solid white;
+
+    color: var(--color-text-secondary);
+  }
+
+}
+

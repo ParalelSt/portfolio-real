@@ -1,0 +1,48 @@
+{
+  "disableEmoji": false,
+  "list": ["feat", "fix", "perf", "refactor", "docs", "style", "test", "chore"],
+  "maxMessageLength": 64,
+  "minMessageLength": 3,
+  "types": {
+    "feat": {
+      "description": "A new feature",
+      "emoji": "✨",
+      "value": "feat"
+    },
+    "fix": {
+      "description": "A bug fix",
+      "emoji": "🐛",
+      "value": "fix"
+    },
+    "perf": {
+      "description": "A code change that improves performance",
+      "emoji": "⚡",
+      "value": "perf"
+    },
+    "refactor": {
+      "description": "A code change that neither fixes a bug nor adds a feature",
+      "emoji": "♻️",
+      "value": "refactor"
+    },
+    "docs": {
+      "description": "Documentation only changes",
+      "emoji": "📝",
+      "value": "docs"
+    },
+    "style": {
+      "description": "Changes that do not affect the meaning of the code",
+      "emoji": "💄",
+      "value": "style"
+    },
+    "test": {
+      "description": "Adding missing tests or correcting existing tests",
+      "emoji": "✅",
+      "value": "test"
+    },
+    "chore": {
+      "description": "Other changes that don't modify src or test files",
+      "emoji": "🔧",
+      "value": "chore"
+    }
+  }
+}
