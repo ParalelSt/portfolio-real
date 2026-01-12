@@ -48,7 +48,7 @@
 }
 
 @layer base {
-  html, body {
+  html, body, * {
     @apply font-primary bg-background text-text-primary;
     @apply scroll-smooth;
     @apply antialiased;
@@ -59,22 +59,44 @@
   }
 
   h1 {
-    @apply text-2xl leading-2xl font-bold;
+    @apply text-xl leading-xl font-bold;
   }
 
   h2 {
-    @apply text-xl leading-xl font-semibold;
+    @apply text-lg leading-lg font-semibold;
   }
 
   h3 {
-    @apply text-lg leading-lg font-thin;
+    @apply text-md leading-md font-thin;
   }
+
+  @media (min-width: 540px) {
+    h1 {
+      @apply text-2xl leading-2xl font-bold;
+    }
+
+    h2 {
+      @apply text-xl leading-xl font-semibold;
+    }
+
+    h3 {
+      @apply text-lg leading-lg font-thin;
+    }
+  }
+  
 }
 
 @layer components {
-  .nav-link {
-    position: relative; 
+  .accent:hover {
+    color: var(--color-accent-hover);
   }
+
+  .nav-link {
+    position: relative;
+
+    transition: color 150ms ease;
+  }
+
 
   .nav-link::after {
     content: "";
@@ -90,26 +112,23 @@
     background: var(--color-accent);
   }
 
-    .bg-hero-gradient {
-    background: 
-      radial-gradient(
-        circle at top,
-        rgba(139, 92, 246, 0.12),
-        transparent 60%
-      ),
-      rgb(11, 11, 16);
-  }
-
   .btn-primary, .btn-secondary {
     padding: 0.5rem 0.75rem;
 
     border-radius: 0.5rem;
 
-    font-size: var(--text-md);
-    line-height: var(--leading-md);
+    font-size: var(--text-base);
+    line-height: var(--leading-base);
 
     transition: scale 150ms ease, border 100ms ease;
   }
+
+   @media (min-width: 430px) {
+    .btn-primary {
+      font-size: var(--text-md);
+      line-height: var(--leading-md);
+    }
+   }
 
   .btn-primary:hover, .btn-secondary:hover {
     scale: 1.05;
