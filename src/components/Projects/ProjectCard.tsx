@@ -28,7 +28,7 @@ const ProjectCard = ({ project }: ProjectCardProp) => {
   };
 
   return (
-    <div className="flex flex-col w-full h-full border-2 border-accent rounded-lg lg:max-w-150">
+    <div className="flex flex-col w-full h-full border-2 border-accent rounded-lg md:max-w-80 lg:max-w-110">
       <Link
         to={project.link}
         className="flex w-full min-h-40 justify-center items-center rounded-tl-lg rounded-tr-lg overflow-hidden"

@@ -45,6 +45,10 @@
   /* Element spacing */
 
   --spacing-section: 6rem;
+
+  /* Breakpoint */
+
+  --breakpoint-sm-custom: 520px;
 }
 
 @layer base {
