@@ -87,6 +87,11 @@
 }
 
 @layer components {
+  .btn-highlight:hover,
+  .btn-highlight:active {
+    opacity: 0.85;
+  }
+
   .accent:hover {
     color: var(--color-accent-hover);
   }
@@ -124,7 +129,7 @@
   }
 
    @media (min-width: 430px) {
-    .btn-primary {
+    .btn-primary, .btn-secondary {
       font-size: var(--text-md);
       line-height: var(--leading-md);
     }
@@ -133,7 +138,7 @@
   .btn-primary:hover, .btn-secondary:hover {
     scale: 1.05;
 
-    border-color: white;
+    border-color: rgb(255, 255, 255);
   } 
 
   .btn-primary {
