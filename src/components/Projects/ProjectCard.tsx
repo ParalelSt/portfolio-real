@@ -17,11 +17,11 @@ const ProjectCard = ({ project }: ProjectCardProp) => {
   const expandDesc = () => {
     if (buttonTextToggle === "Show More") {
       descriptionRef?.current?.classList.add("h-auto");
-      descriptionRef?.current?.classList.remove("h-5");
+      descriptionRef?.current?.classList.remove("h-6");
 
       setButtonTextToggle("Show Less");
     } else {
-      descriptionRef?.current?.classList.add("h-5");
+      descriptionRef?.current?.classList.add("h-6");
       descriptionRef?.current?.classList.remove("h-auto");
       setButtonTextToggle("Show More");
     }
@@ -41,7 +41,10 @@ const ProjectCard = ({ project }: ProjectCardProp) => {
       </Link>
       <div className="flex flex-col justify-center px-5 pt-3 pb-4 rounded-bl-lg rounded-br-lg">
         <h3 className="font-bold">{project.name}</h3>
-        <p className="h-5 mt-3 text-sm overflow-y-hidden" ref={descriptionRef}>
+        <p
+          className="h-6 mt-3 text-sm leading-sm overflow-y-hidden lg:leading-base"
+          ref={descriptionRef}
+        >
           {project.description}
         </p>
         <div className="flex gap-2 items-center">
