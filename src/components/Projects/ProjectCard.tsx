@@ -42,7 +42,7 @@ const ProjectCard = ({ project }: ProjectCardProp) => {
       <div className="flex flex-col justify-center px-5 pt-3 pb-4 rounded-bl-lg rounded-br-lg">
         <h3 className="font-bold">{project.name}</h3>
         <p
-          className="h-6 mt-3 text-sm leading-sm overflow-y-hidden lg:leading-base"
+          className="h-6 mt-3 text-sm leading-sm text-text-primary overflow-y-hidden lg:leading-base"
           ref={descriptionRef}
         >
           {project.description}

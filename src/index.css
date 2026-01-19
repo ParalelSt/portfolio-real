@@ -3,12 +3,14 @@
 @theme {
   /* Colors */
   --color-background: #0B0B10;
+  --color-background-input: #1d1a28;
   --color-surface: rgb(17, 17, 24);
   --color-border: rgb(30, 30, 42);
 
   --color-text-primary: rgb(255, 255, 255);
   --color-text-secondary: rgb(161, 161, 170);
   --color-text-muted: rgb(113, 113, 122);
+ 
 
   --color-accent: rgb(139, 92, 246);
   --color-accent-hover: rgb(124, 58, 237);
@@ -34,6 +36,7 @@
   --leading-2xl: 5.5rem;
 
   /* Radius */
+  --radius-xs: 6px;
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 16px;
@@ -74,7 +77,7 @@
     @apply text-md leading-md font-thin;
   }
 
-  @media (min-width: 540px) {
+  @media (min-width: 768px) {
     h1 {
       @apply text-2xl leading-2xl font-bold;
     }
@@ -87,7 +90,17 @@
       @apply text-lg leading-lg font-thin;
     }
   }
-  
+
+  input, textarea, select {
+    all: unset;
+    background-color: var(--color-background-input);
+    color: var(--color-text-primary);
+    font-family: inherit;
+  }
+
+  input:focus, textarea:focus, select:focus {
+    outline: none;
+  }
 }
 
 @layer components {

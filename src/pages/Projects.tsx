@@ -76,7 +76,7 @@ const Projects = () => {
     <div className="flex flex-col w-full min-h-full mb-auto p-1 pt-5">
       <h2>Projects</h2>
 
-      <div className="flex flex-col gap-10 py-7 w-full justify-between sm-custom:flex-row flex-wrap">
+      <div className="flex flex-col gap-10 mt-5 md:mt-7 w-full justify-between sm-custom:flex-row flex-wrap">
         {projects.map((p: Project) => (
           <ProjectCard project={p} key={p.id} />
         ))}

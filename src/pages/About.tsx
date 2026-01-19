@@ -20,7 +20,7 @@ const About = () => {
     <div className="flex flex-col w-full min-h-full mb-auto p-1 pt-5">
       <h2>About Me</h2>
 
-      <div className="flex flex-col lg:flex-row gap-5 pt-7 w-full ">
+      <div className="flex flex-col lg:flex-row gap-5 mt-5 md:mt-7 w-full ">
         <div className="flex lg:flex-1 justify-center items-center lg:w-full h-full md:h-160 lg:h-full overflow-hidden aspect-square">
           <img
             className="w-full h-full object-cover"
