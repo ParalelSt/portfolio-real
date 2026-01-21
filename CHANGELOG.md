@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/ParalelSt/portfolio-real/compare/v0.0.2...v0.0.3) (2026-01-21)
+
+
+### Features
+
+* Added Contact page, fixed up design on other pages ([1312658](https://github.com/ParalelSt/portfolio-real/commit/1312658f31a5354b1ba235342445316a91b877a4))
+* Added CTA Get in touch button, added ScrollToTop for CTA buttons that navigate to other pages ([ba3826a](https://github.com/ParalelSt/portfolio-real/commit/ba3826a96fc4c2eef4bf318ca386768f44be1ccc))
+
+
+### Bug Fixes
+
+* Contact page layout ([07d42cd](https://github.com/ParalelSt/portfolio-real/commit/07d42cdff1590a707deca52c8b056356740da7f6))
+* layout issues for Contact page ([4fc43be](https://github.com/ParalelSt/portfolio-real/commit/4fc43be4055406ddc1b06d97ce5af951fa83094a))
+* scaling for different screens for Contact page ([698c4ec](https://github.com/ParalelSt/portfolio-real/commit/698c4eca909b149d924311baec927449fc6ab298))
+
 ### [0.0.2](https://github.com/ParalelSt/portfolio-real/compare/v0.0.1...v0.0.2) (2026-01-16)
 
 
