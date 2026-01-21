@@ -65,7 +65,7 @@ const ContactInfo = ({ className }: ContactInfoProps) => {
 
         <li className="flex gap-1 items-center p-2 bg-background-input rounded-xs">
           <FaGithub className="mr-1.5 w-5 h-5 bg-transparent" />
-          <span className="text-base font-bold bg-transparent">LinkedIn:</span>
+          <span className="text-base font-bold bg-transparent">GitHub:</span>
           <Link
             to="https://github.com/ParalelSt"
             className="text-sm text-text-secondary bg-transparent hover:underline cursor-pointer"
