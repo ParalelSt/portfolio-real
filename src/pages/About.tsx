@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const About = () => {
   const techStacks = [
     {
@@ -60,6 +62,14 @@ const About = () => {
             Currently learning NestJS to build better server-side application
           </span>
         </div>
+      </div>
+      <div className="flex justify-center items-center">
+        <Link
+          className="mt-5 px-2 py-1 text-md max-w-full md:max-w-100 border-2 border-accent rounded-xs bg-accent"
+          to={"/contact"}
+        >
+          Get in touch
+        </Link>
       </div>
     </div>
   );
