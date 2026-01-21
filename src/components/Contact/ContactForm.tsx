@@ -20,6 +20,7 @@ const ContactForm = ({ className }: ContactFormProps) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (!formRef.current) return;
     setLoading(true);
 
     emailjs
