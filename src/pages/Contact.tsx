@@ -15,7 +15,7 @@ const Contact = () => {
           <ContactForm className="mt-3" />
         </div>
         <div className="flex mt-2 lg:mt-0 items-start">
-          <ContactInfo className="w-full md:w-md lg:max-w-lg" />
+          <ContactInfo className="w-full md:w-sm lg:max-w-lg" />
         </div>
       </div>
     </div>

@@ -85,7 +85,7 @@ const ContactInfo = ({ className }: ContactInfoProps) => {
         <li className="flex gap-1 items-center text-base">
           Response time:
           <span className="text-sm text-text-secondary">
-            Croatia (Remote-friendly)
+            Usually within 24 hours
           </span>
         </li>
       </ul>
