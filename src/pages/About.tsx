@@ -65,7 +65,7 @@ const About = () => {
       </div>
       <div className="flex justify-center items-center">
         <Link
-          className="mt-5 px-2 py-1 text-md max-w-full md:max-w-100 border-2 border-accent rounded-xs bg-accent"
+          className="mt-5 px-2 py-1 text-md max-w-full md:max-w-100 border-2 border-accent rounded-xs bg-accent btn-highlight"
           to={"/contact"}
         >
           Get in touch

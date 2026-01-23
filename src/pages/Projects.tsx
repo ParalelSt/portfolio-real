@@ -52,23 +52,22 @@ const Projects = () => {
     },
 
     {
-      id: 2,
-      name: "Aron's Handbook (Gym Logbook)",
+      id: 3,
+      name: "Minecraft-clone",
       description:
-        "Aron's Handbook is a gym logbook application for tracking workouts, including reps and weights, while supporting training templates, structured programs, and personal goals. It is built with React and TypeScript, styled using Tailwind CSS, powered by Supabase for backend and authentication, deployed on Vercel, and developed with the help of AI-assisted prompts.",
-      image: "../images/AronSHandBook.png",
-      link: "https://arons-handbook.vercel.app/login",
+        "A Minecraft-inspired voxel sandbox built as a personal hobby project. This project is work in progress and not intended as a finished game — it’s a learning playground for experimenting with 3D rendering, physics, and game mechanics on the web. Built with React + TypeScript, react-three-fiber, and @react-three/cannon.",
+      image: "../images/Minecraft-clone.png",
+      link: "https://minecraft-clone-67xl.vercel.app/",
       stack: [
         "React",
         "Typescript",
-        "Tailwind",
-        "Node.js",
-        "Express",
-        "Supabase",
-        "Vercel",
-        "AI development",
+        "Three.js",
+        "@react-three/fiber",
+        "@react-three/drei",
+        "Zustand",
+        "cannon-es",
       ],
-      repoLink: "https://github.com/ParalelSt/Arons-handbook",
+      repoLink: "https://github.com/ParalelSt/Minecraft-clone",
     },
   ];
 

@@ -79,7 +79,7 @@ const ContactForm = ({ className }: ContactFormProps) => {
         />
         <div className="flex justify-center items-center mt-1">
           <button
-            className="px-2 py-1 max-w-full md:max-w-50 border-2 border-accent rounded-xs bg-accent"
+            className="px-2 py-1 max-w-full md:max-w-50 border-2 border-accent rounded-xs bg-accent btn-highlight"
             type="submit"
             disabled={loading}
           >
