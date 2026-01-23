@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/ParalelSt/portfolio-real/compare/v0.0.3...v0.0.4) (2026-01-23)
+
+
+### Bug Fixes
+
+* build error ([9bab6d2](https://github.com/ParalelSt/portfolio-real/commit/9bab6d20fee7835e9b69a8365ba1fcad382238c4))
+* highlight styles for the rest of the buttons and added Minecraft clone to the projects list ([f9f8346](https://github.com/ParalelSt/portfolio-real/commit/f9f8346a7188cc964d382dbcfd4dbfdbae5e49c3))
+* wrong label on contact info for GitHub ([c7d31d5](https://github.com/ParalelSt/portfolio-real/commit/c7d31d5558c1079381292631f8169e33df00e388))
+
 ### [0.0.3](https://github.com/ParalelSt/portfolio-real/compare/v0.0.2...v0.0.3) (2026-01-21)
 
 
