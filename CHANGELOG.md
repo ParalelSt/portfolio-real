@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/ParalelSt/portfolio-real/compare/v0.0.4...v0.0.5) (2026-01-30)
+
+
+### Features
+
+* added component for Logo, added new lines in about page, removed resume.tsx because it was unneeded ([cb334bc](https://github.com/ParalelSt/portfolio-real/commit/cb334bcfdd12796a99dc7104cc3caa9a4f27f269))
+
+
+### Bug Fixes
+
+* wrong link was used for the deploy ([ebaa41d](https://github.com/ParalelSt/portfolio-real/commit/ebaa41d2d4181e023b17c8c78809e0ecaec7fd05))
+
 ### [0.0.4](https://github.com/ParalelSt/portfolio-real/compare/v0.0.3...v0.0.4) (2026-01-23)
 
 
