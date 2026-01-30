@@ -32,12 +32,21 @@ const About = () => {
         </div>
         <div className="flex lg:flex-2 flex-col gap-5">
           <div className="flex flex-col gap-5 w-full h-full overflow-hidden lg:p-5 lg:border-2 lg:border-accent lg:rounded-sm">
-            <p className="text-base md:text-md leading-base md:leading-md font-semi-bold">
-              I'm a full-stack web developer with a strong focus on frontend
+            <div className="flex flex-col gap-1">
+              <h3 className="text-md md:text-lg font-bold">Aron Matoic</h3>
+              <span className="text-base md:text-md leading-base font-semi-bold">
+                Full-Stack Web Developer
+              </span>
+              <span className="text-base md:text-md leading-base font-semi-bold">
+                Križevci, Croatia &middot; CET / CEST (UTC+1 / UTC+2)
+              </span>
+            </div>
+            <p className="text-base md:text-md leading-base font-semi-bold">
+              I’m a full-stack web developer with a strong focus on frontend
               development. I enjoy building clean, responsive, and user-friendly
               interfaces, primarily working with React and TypeScript.
             </p>
-            <p className="text-base md:text-md leading-base md:leading-md font-semi-bold">
+            <p className="text-base md:text-md leading-base font-semi-bold">
               I like combining solid logic with thoughtful UI design, while
               continuously expanding my backend knowledge to build more complete
               applications.

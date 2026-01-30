@@ -19,6 +19,8 @@
   --font-primary: Inter, system-ui, sans-serif;
   --font-accent: "Space Grotesk", system-ui, sans-serif;
 
+  --text-logo: 1.75rem;
+
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;  
   --text-base: 1rem;
