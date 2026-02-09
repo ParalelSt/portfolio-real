@@ -6,7 +6,7 @@ const Hero = () => {
       <h1 className="text-center text-text-primary">
         Hi, I am <span className="accent">Aron</span>!
       </h1>
-      <h3 className="w-full text-text-secondary">
+      <h3 className="max-w-full w-full lg:text-center lg:max-w-170 text-text-secondary">
         I build modern, scalable web applications with React and TypeScript,
         focusing on performance and clean UI.
       </h3>
