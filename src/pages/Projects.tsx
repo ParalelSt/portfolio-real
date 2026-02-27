@@ -37,7 +37,7 @@ const Projects = () => {
       description:
         "Aron's Handbook is a gym logbook application for tracking workouts, including reps and weights, while supporting training templates, structured programs, and personal goals. It is built with React and TypeScript, styled using Tailwind CSS, powered by Supabase for backend and authentication, deployed on Vercel, and developed with the help of AI-assisted prompts.",
       image: "../images/AronSHandBook.png",
-      link: "https://arons-handbook.vercel.app/login",
+      link: "https://www.aronshandbook.digital/login",
       stack: [
         "React",
         "Typescript",
@@ -66,9 +66,33 @@ const Projects = () => {
         "@react-three/drei",
         "Zustand",
         "cannon-es",
+        "Vercel",
+        "AI development",
       ],
       repoLink: "https://github.com/ParalelSt/Minecraft-clone",
     },
+
+    {
+      id: 4,
+      name: "PC Upgrade Advisor",
+      description:
+        "PC Upgrade Advisor project that aims to make pc upgrading choices as easy as possible, currently a build in progress",
+      image: "../images/PCUpgradeAdvisor",
+      link: "https://pc-upgrade-advisor.vercel.app/",
+      stack: ["React", "Typescript", "Tailwind", "Vercel", "Neon/PostreSQL"],
+      repoLink: "https://github.com/ParalelSt/pc_upgrade_advisor",
+    },
+
+    /*{
+      id: 5,
+      name: "Car Ownership",
+      description:
+        "PC Upgrade Advisor project that aims to make pc upgrading choices as easy as possible, currently a build in progress",
+      image: "../images/PCUpgradeAdvisor",
+      link: "https://pc-upgrade-advisor.vercel.app/",
+      stack: ["React", "Typescript", "Tailwind", "Vercel", "Neon/PostreSQL"],
+      repoLink: "https://github.com/ParalelSt/pc_upgrade_advisor",
+    }, */
   ];
 
   return (
