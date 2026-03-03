@@ -77,7 +77,7 @@ const Projects = () => {
       name: "PC Upgrade Advisor",
       description:
         "PC Upgrade Advisor project that aims to make pc upgrading choices as easy as possible, currently a build in progress",
-      image: "../images/PCUpgradeAdvisor",
+      image: "../images/PCUpgradeAdvisor.png",
       link: "https://pc-upgrade-advisor.vercel.app/",
       stack: ["React", "Typescript", "Tailwind", "Vercel", "Neon/PostreSQL"],
       repoLink: "https://github.com/ParalelSt/pc_upgrade_advisor",
