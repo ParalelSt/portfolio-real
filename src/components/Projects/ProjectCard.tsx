@@ -5,9 +5,10 @@ import { Link } from "react-router-dom";
 
 interface ProjectCardProp {
   project: Project;
+  className?: string;
 }
 
-const ProjectCard = ({ project }: ProjectCardProp) => {
+const ProjectCard = ({ project, className }: ProjectCardProp) => {
   const descriptionRef = useRef<HTMLParagraphElement>(null);
 
   const [buttonTextToggle, setButtonTextToggle] = useState<
@@ -28,13 +29,15 @@ const ProjectCard = ({ project }: ProjectCardProp) => {
   };
 
   return (
-    <div className="flex flex-col w-full h-full border-2 border-accent rounded-lg md:max-w-80 lg:max-w-110">
+    <div
+      className={`flex flex-col w-full h-full border-2 border-accent rounded-lg md:max-w-80 lg:max-w-110 ${className ?? ""}`}
+    >
       <Link
         to={project.link}
         className="flex w-full min-h-40 justify-center items-center rounded-tl-lg rounded-tr-lg overflow-hidden"
       >
         <img
-          className="w-auto h-auto object-cover rounded-tl-lg rounded-tr-lg"
+          className="w-auto object-cover rounded-tl-lg rounded-tr-lg"
           src={project.image}
           alt="project-image"
         />
