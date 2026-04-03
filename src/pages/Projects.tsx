@@ -74,23 +74,6 @@ const Projects = () => {
 
     {
       id: 4,
-      name: "Car Ownership",
-      description: "Build in progress",
-      image: "/images/CarOwnershipIntelligence.png",
-      link: "https://car-ownership-intelligence.vercel.app/login",
-      stack: [
-        "React",
-        "Typescript",
-        "Tailwind",
-        "Vercel",
-        ".Net 8",
-        "PostreSQL",
-      ],
-      repoLink: "https://github.com/ParalelSt/Car-Ownership-Intelligence",
-    },
-
-    {
-      id: 5,
       name: "Panora",
       description:
         "Panora is a handpan learning application featuring structured lessons across beginner, intermediate, and advanced tiers, practice exercises, and a free practice mode with a fully configurable metronome. It uses Web Audio API synthesis to generate realistic handpan tones with layered harmonics, and includes visual beat-by-beat notation that auto-detects subdivisions (8ths, triplets, 16ths). Users can record practice sessions, play them back at variable speeds, track their progress and streaks, and switch between handpan tunings. Built with Next.js 16, React 19, and TypeScript, styled with Tailwind CSS 4, and developed with the help of AI-assisted prompts.",
@@ -111,6 +94,23 @@ const Projects = () => {
         "AI development",
       ],
       repoLink: "https://github.com/ParalelSt/Handpan-Learning-App",
+    },
+
+    {
+      id: 5,
+      name: "Car Ownership Intelligence",
+      description: "Build in progress",
+      image: "/images/CarOwnershipIntelligence.png",
+      link: "https://car-ownership-intelligence.vercel.app/login",
+      stack: [
+        "React",
+        "Typescript",
+        "Tailwind",
+        "Vercel",
+        ".Net 8",
+        "PostreSQL",
+      ],
+      repoLink: "https://github.com/ParalelSt/Car-Ownership-Intelligence",
     },
 
     {

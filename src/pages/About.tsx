@@ -9,7 +9,7 @@ const About = () => {
 
     {
       name: "Backend",
-      tools: ["Node.js", "Express", "NestJS"],
+      tools: ["Node.js", "Express", ".Net 8"],
     },
 
     {
@@ -68,7 +68,7 @@ const About = () => {
             ))}
           </div>
           <span className="text-base md:text-md italic">
-            Currently learning NestJS to build better server-side application
+            Currently learning .Net 8 to build better server-side applications
           </span>
         </div>
       </div>
