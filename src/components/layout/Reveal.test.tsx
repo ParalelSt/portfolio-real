@@ -13,9 +13,14 @@ function fireIntersection(isIntersecting: boolean) {
 
 describe("Reveal", () => {
   it("starts hidden and reveals once it intersects", () => {
-    render(<Reveal>revealed content</Reveal>);
-    const wrapper = screen.getByText("revealed content").parentElement;
-    expect(wrapper).toHaveClass("opacity-0");
+    render(
+      <Reveal>
+        <p>revealed content</p>
+      </Reveal>,
+    );
+    expect(screen.getByText("revealed content").parentElement).toHaveClass(
+      "opacity-0",
+    );
 
     fireIntersection(true);
     expect(screen.getByText("revealed content").parentElement).toHaveClass(
@@ -35,9 +40,25 @@ describe("Reveal", () => {
       dispatchEvent: () => false,
     }));
 
-    render(<Reveal>reduced content</Reveal>);
+    render(
+      <Reveal>
+        <p>reduced content</p>
+      </Reveal>,
+    );
     expect(screen.getByText("reduced content").parentElement).toHaveClass(
       "opacity-100",
     );
+  });
+
+  it("applies className to the root element that directly contains its children", () => {
+    render(
+      <Reveal className="h-full">
+        <article>card</article>
+      </Reveal>,
+    );
+    const root = screen.getByText("card").parentElement;
+    expect(root).toHaveClass("h-full");
+    expect(root?.tagName).toBe("DIV");
+    expect(root?.children).toHaveLength(1);
   });
 });

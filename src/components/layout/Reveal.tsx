@@ -57,6 +57,7 @@ export default function Reveal({ children, delay = 0, className }: RevealProps) 
   return (
     <div
       ref={ref}
+      data-reveal=""
       style={{ transitionDelay: `${delay}ms` }}
       className={cn(
         "transition-[opacity,transform] duration-500 ease-out motion-reduce:transition-none",
@@ -64,7 +65,7 @@ export default function Reveal({ children, delay = 0, className }: RevealProps) 
         className,
       )}
     >
-      <div>{children}</div>
+      {children}
     </div>
   );
 }
