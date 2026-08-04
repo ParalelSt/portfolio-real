@@ -38,3 +38,37 @@ vi.mock("next/link", () => ({
     </a>
   ),
 }));
+
+type ObserverCallback = (entries: IntersectionObserverEntry[]) => void;
+
+export const observerCallbacks = new Set<ObserverCallback>();
+
+class IntersectionObserverStub {
+  constructor(private readonly callback: ObserverCallback) {
+    observerCallbacks.add(callback);
+  }
+  observe() {}
+  unobserve() {}
+  disconnect() {
+    observerCallbacks.delete(this.callback);
+  }
+  takeRecords(): IntersectionObserverEntry[] {
+    return [];
+  }
+}
+
+vi.stubGlobal("IntersectionObserver", IntersectionObserverStub);
+
+vi.stubGlobal(
+  "matchMedia",
+  (query: string) => ({
+    matches: false,
+    media: query,
+    onchange: null,
+    addListener: () => {},
+    removeListener: () => {},
+    addEventListener: () => {},
+    removeEventListener: () => {},
+    dispatchEvent: () => false,
+  }),
+);
