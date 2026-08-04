@@ -61,4 +61,10 @@ describe("Reveal", () => {
     expect(root?.tagName).toBe("DIV");
     expect(root?.children).toHaveLength(1);
   });
+
+  it("starts each test with reduced motion off", () => {
+    expect(window.matchMedia("(prefers-reduced-motion: reduce)").matches).toBe(
+      false,
+    );
+  });
 });
