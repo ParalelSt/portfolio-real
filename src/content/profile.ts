@@ -38,7 +38,7 @@ export const profile = {
     secondaryAction: { label: "More About Me", href: "#about" },
   },
   bio: [
-    "I'm a full-stack web developer with a strong focus on frontend development. I enjoy building clean, responsive, and user-friendly interfaces, primarily working with React and TypeScript.",
+    "I’m a full-stack web developer with a strong focus on frontend development. I enjoy building clean, responsive, and user-friendly interfaces, primarily working with React and TypeScript.",
     "I like combining solid logic with thoughtful UI design, while continuously expanding my backend knowledge to build more complete applications.",
   ],
   learning: "Currently learning .Net 8 to build better server-side applications",

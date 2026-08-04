@@ -56,7 +56,7 @@ export const projects: Project[] = [
     name: "Minecraft-clone",
     summary: "A Minecraft-inspired voxel sandbox built as a personal hobby project.",
     description:
-      "A Minecraft-inspired voxel sandbox built as a personal hobby project. This project is work in progress and not intended as a finished game — it's a learning playground for experimenting with 3D rendering, physics, and game mechanics on the web. Built with React + TypeScript, react-three-fiber, and @react-three/cannon.",
+      "A Minecraft-inspired voxel sandbox built as a personal hobby project. This project is work in progress and not intended as a finished game — it’s a learning playground for experimenting with 3D rendering, physics, and game mechanics on the web. Built with React + TypeScript, react-three-fiber, and @react-three/cannon.",
     image: "/images/Minecraft-clone.png",
     imageAlt: "A voxel landscape rendered in the Minecraft clone",
     liveUrl: "https://minecraft-clone-dun.vercel.app/",

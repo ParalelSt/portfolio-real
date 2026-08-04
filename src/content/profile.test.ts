@@ -60,4 +60,8 @@ describe("profile content", () => {
   it("has an https site url for canonical metadata", () => {
     expect(new URL(profile.siteUrl).protocol).toBe("https:");
   });
+
+  it("preserves the original curly apostrophe in the bio", () => {
+    expect(profile.bio[0]).toContain("I’m a full-stack web developer");
+  });
 });

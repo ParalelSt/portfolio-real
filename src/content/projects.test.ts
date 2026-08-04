@@ -57,4 +57,10 @@ describe("projects content", () => {
   it("returns undefined for an unknown slug", () => {
     expect(getProject("nope")).toBeUndefined();
   });
+
+  it("preserves the original curly apostrophe and em dash in the description", () => {
+    const minecraft = getProject("minecraft-clone");
+    expect(minecraft?.description).toContain("it’s a learning playground");
+    expect(minecraft?.description).toContain("finished game — it");
+  });
 });
