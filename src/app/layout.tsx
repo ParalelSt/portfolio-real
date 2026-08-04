@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Instrument_Serif, Inter, JetBrains_Mono } from "next/font/google";
 import { profile } from "@/content/profile";
+import Footer from "@/components/layout/Footer";
+import Nav from "@/components/layout/Nav";
 import "@/styles/globals.css";
 
 const display = Instrument_Serif({
@@ -57,7 +59,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
           Skip to content
         </a>
+        <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );
