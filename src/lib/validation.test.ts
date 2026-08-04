@@ -56,6 +56,14 @@ describe("validateEmail", () => {
   it("rejects absurdly long addresses", () => {
     expect(validateEmail(`${"a".repeat(250)}@example.com`)).toBeTruthy();
   });
+
+  it("rejects a single-character top-level domain", () => {
+    expect(validateEmail("aron@example.c")).toBeTruthy();
+  });
+
+  it("accepts a two-character top-level domain", () => {
+    expect(validateEmail("aron@example.co")).toBeNull();
+  });
 });
 
 describe("validateMessage", () => {
@@ -71,6 +79,16 @@ describe("validateMessage", () => {
 
   it("rejects input above the maximum", () => {
     expect(validateMessage("A".repeat(MESSAGE_MAX + 1))).toBeTruthy();
+  });
+
+  it("rejects whitespace-only input", () => {
+    expect(validateMessage("   ".repeat(10))).toBeTruthy();
+  });
+
+  it("trims before measuring", () => {
+    const atMinimum = "A".repeat(MESSAGE_MIN);
+    expect(validateMessage(`   ${atMinimum}   `)).toBeNull();
+    expect(validateMessage(`   ${"A".repeat(MESSAGE_MIN - 1)}   `)).toBeTruthy();
   });
 });
 
