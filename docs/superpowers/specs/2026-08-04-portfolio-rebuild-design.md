@@ -194,12 +194,18 @@ Five projects, in this order. Descriptions are the existing text verbatim.
    - Image `/images/CarOwnershipIntelligence.png`, live `https://car-ownership-intelligence.vercel.app/login`, repo `https://github.com/ParalelSt/Car-Ownership-Intelligence`
    - Stack: React, Typescript, Tailwind, Vercel, .Net 8, PostgreSQL
 
-Two corrections applied to the transcribed data, both fixing typos in the source
-rather than changing meaning:
+Three corrections applied to the transcribed data, all fixing inconsistencies in
+the source rather than changing meaning:
 
 - `PostreSQL` becomes `PostgreSQL`.
 - The old stack list contains `"Drizzle"` and `"ORM"` as two separate chips. They
   become one chip, `Drizzle ORM`.
+- Panora's stack lists `"AI development"` with a lowercase `d` while Aron's
+  Handbook and Minecraft-clone list `"AI Development"`. All three normalize to
+  `AI Development` so the chip reads identically wherever it appears.
+
+Prose is never touched. These three corrections apply only to stack chip labels,
+which are data rather than written copy.
 
 Dropped from the old data:
 
